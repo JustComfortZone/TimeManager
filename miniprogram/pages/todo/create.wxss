@@ -1,0 +1,158 @@
+/* miniprogram/pages/todo/create.wxss */
+.create-header {
+  padding: 0;
+  border-bottom: 0;
+}
+.todo-item {
+  display: flex;
+  background: #FFF;
+  border-left: 20rpx solid #fff;
+  margin-top: 300rpx;
+  /* margin-left: 4rpx; */
+  font-size: 32rpx;
+  padding: 22rpx 15rpx; 
+  
+  /* border-bottom: 1rpx dashed #f0f3ff;  */
+}
+
+.todo-item--level0 {
+  border-left-color: #5b0000;
+}
+.todo-item--level1 {
+  border-left-color: #8f1c0d;
+}
+.todo-item--level2 {
+  border-left-color: #c78e8e;
+}
+.todo-item--level3 {
+  border-left-color: #d3c0c0;
+}
+
+.todo-item__col1 {
+  flex: 1;
+}
+
+.todo-item__col2 {
+ 
+  flex: 7;
+}
+
+.todo-item__col3 {
+  flex: 2;
+}
+
+.todo-item__checkbox {
+  display: inline-block;
+  padding: 0 32rpx 0 20rpx;
+  padding-bottom: 4px;
+  vertical-align: middle;
+}
+
+.todo-item__icon {
+  color: white !important;
+  border: 5rpx solid #5872DE;
+  vertical-align: middle;
+  padding: 3rpx;
+}
+/* 个人日程的文字 */
+.todo-item__title {
+  color: #2C323F;
+  display: inline-block;
+  vertical-align: middle;
+  width: 94%;
+}
+
+.todo-item--completed .todo-item__title {
+  color: #C1C5C8;
+}
+
+.todo-item__date {
+  font-size: 28rpx;
+  color: #8f1c0d;
+  width: 180rpx;
+
+  text-align: center;
+
+}
+.todo-checkbox {
+  display: inline-block;
+  padding: 1rpx 1rpx;
+  vertical-align: middle;
+  
+}
+/*任务完成框*/
+.todo-checkbox__icon {
+  color: white !important;
+  border: 4rpx solid #8f1c0d;
+  padding: 1rpx;
+
+}
+
+.todo-checkbox--checked .todo-checkbox__icon{
+  border-color: #C1C5C8 !important;
+}
+
+.field-set {
+  background-color: #c78e8e;
+  width: 90%;
+  margin: auto;
+}
+
+.field-item {
+  display: flex;
+  border-bottom: 1px dashed #eee;
+  padding: 30rpx;
+  font-size: 30rpx;
+  color: #fff;
+}
+
+.field-item:last-child {
+  border-bottom: none;
+}
+
+.field-label {
+  display: block;
+  color: #5b0000;
+  white-space: nowrap;
+  min-width: 100rpx;
+  text-align: right;
+}
+
+.field-control {
+  flex: 8;
+  padding: 0 0 0 32rpx;
+  font-size: 32rpx;
+}
+
+.field-input {
+  font-size: 32rpx;
+  padding: 6rpx 0;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 300rpx;
+  left: 0;
+  right: 0;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.button-group {
+  display: flex;
+}
+
+.button {
+  display: inline-block;
+  flex: 1;
+  background-color: #c78e8e;
+  font-size: 32rpx;
+}
+
+.button-primary {
+  background-color: #8f1c0d;
+  border: 1px solid #8f1c0d;
+  color: #fff;
+ 
+  
+}

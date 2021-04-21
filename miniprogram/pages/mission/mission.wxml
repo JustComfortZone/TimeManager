@@ -1,0 +1,5 @@
+<!--miniprogram/pages/mission/mission.wxml-->
+<view class="charts-card">
+    <text class="charts-card__header">任务完成率</text>
+    <canvas class="charts-card__body" canvas-id="chartsA"></canvas>
+  </view>

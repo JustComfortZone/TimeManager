@@ -1,0 +1,12 @@
+<!--miniprogram/pages/login/login.wxml-->
+<view class="login">
+  <view class="title"> 
+    <image style="height:70rpx;width:370rpx;"  src="../../static/images/2.png"></image>
+    <view class="title1">个人时间管理微信小程序</view>
+  </view>
+<view class="text">账号</view>
+<input class="input" bindinput="getaccount" placeholder="请输入账号"/>
+<view class="text">密码</view>
+<input class="input"  bindinput="getpassword" password="true"  placeholder="请输入密码"/>
+<button  bindtap="login">登录</button>
+</view>

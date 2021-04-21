@@ -1,0 +1,50 @@
+<!--miniprogram/pages/note/index.wxml-->
+<block wx:for='{{topics}}' wx:for-index="idx">
+  <view class='container' bindtap='onItemClick' data-topicId='{{item._id}}'>
+    <view class='container-content'>
+      <view class='user-info'>
+        <image class='user-head' src='{{notefileID}}' mode='aspectFill'></image>
+        <view class='user-name-time'>
+          <view class='user-name'>{{notename}}</view>
+          <view class='user-publish-time'>{{item.date}}</view>
+          <!-- 删除键 -->
+       <view class="user-name-time-right">
+          <button class="delete_content" data-topicId='{{item._id}}' catchtap="delete_content" type="default">{{_button}}</button>
+        </view>
+        </view>
+       
+
+      </view>
+       
+      <view class='content'>
+        <!-- 显示文本 -->
+        <block wx:if="{{item.content != ''}} && {{item.images.length > 0}}">
+          <text class='content-text'>{{item.content}}</text>
+          <scroll-view class='content-scroll' scroll-x='true'>
+            <block wx:for="{{item.images}}">
+              <image class='content-img' src='{{item}}' mode='aspectFill'></image>
+            </block>
+          </scroll-view>
+        </block>
+        <!-- 显示图片 -->
+        <block wx:elif="{{item.images.length > 0}}">
+          <scroll-view class='content-scroll' scroll-x='true'>
+            <block wx:for="{{item.images}}">
+              <image class='content-img' src='{{item}}' mode='aspectFill'></image>
+            </block>
+          </scroll-view>
+
+        </block>
+        <!-- 显示文本 -->
+        <block wx:else>
+          <text class='content-text'>{{item.content}}</text>
+        </block>
+      </view>
+    </view>
+
+    <view class='container-line'></view>
+  </view>
+</block>
+<view class="page2" bindtap="Topublish">
++
+</view>

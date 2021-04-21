@@ -1,0 +1,22 @@
+/* miniprogram/pages/day/day.wxss */
+.charts-card {
+  margin-bottom: 50rpx;
+}
+
+.charts-card__header {
+  display: block;
+  margin: 30rpx auto;
+  border-left: 8rpx solid #8f1c0d;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 32rpx;
+  color: #666;
+}
+
+.charts-card__body {
+  margin:  300rpx auto;
+  display: block;
+  width: 100%;
+  height: 370rpx;
+  padding: 20rpx;
+}

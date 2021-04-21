@@ -1,0 +1,160 @@
+/* miniprogram/pages/mbook/mbook.wxss */
+.showbox {
+  color: #d3c0c0;
+  width: 100%;
+  background-color: #8f1c0d;
+}
+.showbox-top {
+  text-align: center;
+}
+.s-t-money {
+  font-size: 2rem;
+  font-family: 'KaiTi';
+  padding: 30rpx 0 10rpx;
+}
+
+.s-t-tag {
+  font-size: 0.8rem;
+  margin-top: 10rpx;
+ padding: 20rpx;
+
+}
+
+.s-t-tag-box {
+  border-radius: 50rpx;
+  padding: 5rpx 20rpx;
+}
+
+.showbox-down {
+  margin-top: 35rpx;
+  padding-bottom: 85rpx;
+  
+}
+
+.s-d-item {
+  width: 50%;
+  float: left;
+  text-align: center;
+  
+}
+
+.s-d-item-top {
+  font-family: 'KaiTi';
+  font-size: 1.2rem;
+}
+
+.s-d-item-down {
+  font-size: 0.8rem;
+}
+.s-s-item {
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  color: #5b0000;
+  font-weight: bold;
+}
+
+.s-s-item-top {
+  font-family: 'KaiTi';
+  font-size: 1.2rem;
+}
+
+.s-s-item-down {
+  font-size: 0.8rem;
+}
+
+.mbox {
+  min-height: 200px;
+  clear: both;
+}
+
+.mbox-item {
+  clear: both;
+}
+
+.m-t-title {
+  background-color: #c78e8e;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #5b0000;
+}
+
+.m-t-t-left {
+  float: left;
+  margin-left: 10px;
+}
+
+.m-t-t-right {
+  float: right;
+  margin-right: 10px;
+}
+
+.m-list {
+  height: 120rpx;
+  line-height: 70rpx;
+  clear: both;
+  vertical-align: middle;
+}
+
+.m-l-left {
+  float: left;
+  width: 17%;
+}
+
+.m-l-timg {
+ 
+  margin: 7px 15px 0;
+}
+
+.m-l-right {
+  width: 83%;
+  float: left;
+  
+}
+
+.mbox-item .m-list:last-child .m-l-right {
+  border-bottom: 0px;
+}
+
+.m-l-tagname {
+  float: left;
+  width: 400rpx;
+  margin-top: 30rpx;
+  color: #5b0000;
+}
+
+.m-l-tagremark {
+  color: #c78e8e;
+  font-size: 13px;
+}
+
+.m-l-money {
+  float: right;
+  padding-right: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  width: 200rpx;
+  text-align: right;
+  margin-top: 30rpx;
+
+}
+
+
+.todo-add {
+  position: fixed;
+  left: 50%;
+  bottom: 60rpx;
+  width: 90rpx;
+  height: 90rpx;
+  margin-left: -45rpx;
+  border-radius: 50%;
+  font-size: 60rpx;
+  line-height: 90rpx;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  color: #8f1c0d;
+}

@@ -1,0 +1,62 @@
+<!--miniprogram/pages/mbook/addwater.wxml-->
+<form bind:submit="formSubmit" report-submit="true" bindreset="formReset">
+  <!--  -->
+  <view class='nav'>
+    <view class='nav-item {{nav_color1}}' bindtap="jizhangmenu" data-item='2' style="border-right: 1px solid #8f1c0d; ">
+      支出
+    </view>
+    <view class='nav-item  {{nav_color2}}' bindtap="jizhangmenu" data-item='1'>
+      收入
+    </view>
+  </view>
+
+
+  <view class='jz-box b-bottom'>
+    <view class='jz-title'>
+      <!--  -->
+      <view class='jz-t-img'  >
+        <image wx:if="{{title_icon.length>0}}" style="width: 35px; height: 35px;margin-top:15rpx;" src="../../static/{{title_icon}}.svg"></image>
+        
+      </view>
+      <label class='jz-t-text'>{{title_text}}</label>
+    </view>
+    <view class='jz-input-box'>
+      <input type='digit' name='money' class='jz-input'  placeholder-class="place-holder" placeholder="0.00" value='{{money}}' auto-focus/>
+    </view>
+  </view>
+
+  <!--  中间的图标-->
+  <view  class="content">
+    <view wx:for="{{iconArr}}" class="icon_item" wx:key="icon" bindtap="clickIcon" data-index="{{index}}">
+   
+      <view class="icon_icon" > <image wx:if="{{item.icon.length>0}}" src="../../static/{{item.icon}}.svg" ></image> </view>
+      <view class='icon_text {{index == iconActive ? "icon_text_active" : ""}}'>{{item.text}}</view>
+    </view>
+  </view>
+
+  <!-- 日期和备注 -->
+  <view class='jz-gj'>
+    <view class='rili'>
+      <picker class="rili-box" mode="date" value="{{date}}" bindchange="bindDateChange">
+        {{date}}
+      </picker>
+    </view>
+
+    <view class='remark'>
+      <input type='text' name='remark'  placeholder-class="place-holder" placeholder='备注' value="{{remark}}"></input>
+    </view>
+  </view>
+  <view class='content btnbox'>
+    <view class='btnitem2'>
+      <button formType="submit" class='btnsive' hover-class="btnsive-hover" data-btn='2'>
+        保存
+      </button>
+    </view>
+     <view class="hide">
+      <input name='user' value='{{_openid}}' />
+
+      <input name='date' value='{{date}}' />
+    </view>
+  </view>
+</form>
+

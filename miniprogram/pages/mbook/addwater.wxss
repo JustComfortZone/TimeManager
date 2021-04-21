@@ -1,0 +1,250 @@
+/* miniprogram/pages/mbook/addwater.wxss */
+page{
+  background-color: #c78e8e;
+  overflow: hidden;
+}
+
+.place-holder {
+  color: #5b0000;
+}
+.content{
+  width: 660rpx;
+  margin: 40rpx auto;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.content .icon_item{
+  width: 220rpx;
+  height: 130rpx;
+  text-align: center;
+  margin-bottom: 50rpx;
+  
+}
+.content .icon_item .icon_icon{
+  height: 70rpx;
+}
+.content .icon_item .icon_icon image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.content .icon_item .icon_text{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+}
+.content .icon_item .icon_text_active{
+  color: #8f1c0d;
+  font-weight: 500;
+}
+
+.iconfont {
+  font-size: 30px !important;
+}
+
+.nav {
+  width: 153px;
+  height: 32px;
+  margin: 20rpx auto;
+   border: 1px solid #8f1c0d;
+  border-radius: 3px; 
+  font-size: 14px;
+  color: #8f1c0d;
+}
+
+.nav-item {
+  float: left;
+  width: 76px;
+  line-height: 32px;
+  text-align: center;
+  
+}
+
+.nav-item:nth-child(0) {
+  border-right: 1px solid #8f1c0d;
+}
+
+.nav-active {
+  background-color: #8f1c0d;
+  color: #d3c0c0;
+}
+
+.jz-box {
+  clear: both;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 0.5px solid #ededed;
+  padding: 20px 0 10px;
+  margin-top: -30rpx;
+}
+
+.jz-title {
+  float: left;
+  margin-left: 36rpx;
+  width: 30%;
+  
+}
+
+.jz-t-img {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 50px;
+  background-color: #d3c0c0;
+  text-align: center;
+  
+  float: left;
+}
+
+.jz-t-text {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.jz-input-box {
+  float: right;
+  margin-right: 40rpx;
+  width: 50%;
+}
+
+.jz-input {
+  text-align: right;
+  height: 45px;
+  line-height: 45px;
+  color: #5b0000;
+}
+
+.jz-item {
+  width: 100%;
+  height: 500rpx;
+  clear: both;
+}
+
+.jz-item-img {
+  /* background-color: #444; */
+  width: 20%;
+  height: 80px;
+  text-align: center;
+  float: left;
+  margin-top: 15px;
+}
+
+/* .jz-item-img:hover .jz-imgs {
+  background-color: #f6c142;
+  color: #fff;
+} */
+
+
+
+.jz-imgs {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  border-radius: 50px;
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: #f6f6f6;
+  color: #5b0000;
+}
+
+.jz-tag {
+  width: 100%;
+  font-size: 14px;
+  color: #5b0000;
+}
+
+.jz-gj {
+  padding: 0 20px;
+  line-height: 40px;
+  height: 40px;
+  margin-top: -80rpx;
+  line-height: 45px;
+  border-top: 0.5px solid #ededed;
+}
+
+.rili {
+  float: left;
+  width: 33%;
+}
+
+.rili-box {
+  color: #5b0000;
+}
+
+.rili-box image {
+  width: 30px;
+  height: 30px;
+}
+
+.cardslt {
+  float: left;
+  width: 33%;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.remark {
+  float: right;
+  width: 33%;
+  color: #5b0000;
+}
+
+.remark input {
+  text-align: right;
+  line-height: 40px;
+  width: 100%;
+  height: 40px;
+  color: #5b0000;
+}
+
+.btnbox {
+  clear: both;
+  margin-top: 20px;
+}
+
+.btnitem1 {
+  width: 50%;
+  text-align: center;
+  float: left;
+}
+
+.btnitem2 {
+  width: 50%;
+  text-align: center;
+  float: left;
+}
+
+.btnsive {
+  border-radius: 4px;
+  width: 150px;
+  margin: 0 auto;
+}
+button{
+  margin: 0 auto;
+  
+}
+
+
+
+
+.btnitem2 .btnsive {
+  background-color: #8f1c0d;
+  color: #d3c0c0;
+  height: 42px;
+  line-height: 28px;
+  margin: 0 auto;
+  margin-left: 130rpx;
+}
+
+.btnitem2 .btnsive-hover {
+  background-color: #8f1c0d;
+}
+
+.btnitem2 .btnsive::after {
+  border: none;
+}
+.hide{
+  display: none;
+}

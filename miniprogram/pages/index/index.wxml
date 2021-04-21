@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true" style="width: 100%; height: 100%">
+<view bindtouchend="touchEnd" bindtouchstart="touchStart" class="container">
+<view class="one {{ view[0].in }} {{ view[0].out }}" style="width: 100%; height: 100%">
+  <image class="one-one {{ one_one }}" src="../../static/images/12.jpg"></image>
+  <image class="one-two {{ one_two }}" src="../../static/images/2.png"></image>
+  <view class="one-three {{ one_three }}"> 个人时间管理微信小程序</view>
+  <view class="one-four {{ one_four }}">规划管理时间,安排事件日‪程</view>
+  <view class="one-five {{ one_five }}">One day at a time.</view></view>
+  <view class="two {{ view[1].in }} {{ view[1].out }}" style="width: 100%; height: 100%">
+    <image class="two-one {{ two_one }}" src="../../static/images/7.png"></image>
+    <image class="two-two {{ two_two }}" src="../../static/images/14.png"></image>
+    <image class="two-three {{ two_three }}" src="../../static/images/3.png"></image>
+    <image class="two-four {{ two_four }}" src="../../static/images/20.png"></image>
+    <view class="two-five {{two_five}}" >
+      <view wx:if="{{!loginOK}}">
+        <button style="color:#8f1c0d; font-size:30rpx;margin:-13rpx 40rpx 25rpx -50rpx;" bindtap="login">登录</button>
+        <button  style="color:#8f1c0d; font-size:30rpx;margin:-50rpx 40rpx 25rpx -50rpx;" bindtap="register">注册</button>
+      </view>
+      <view wx:else >
+        <button style="color:#8f1c0d; font-size:30rpx;font-weight:700;margin:10rpx 90rpx 50rpx -50rpx;" bindtap="toLogs">进入小程序</button>
+      </view>
+    
+  </view>
+  </view>
+  
+    <image class="bottom-top {{ bottom_top }}" src="../../static/images/5.png"></image>
+    <image class="bottom-one {{ bottom_one }}" src="../../static/images/1.png"></image>
+    <image class="bottom-one2 {{ bottom_one }}" src="../../static/images/1.png"></image>
+    <image class="bottom-two {{ bottom_two }}" src="../../static/images/11.png"></image>
+    <image class="bottom-two2 {{ bottom_two }}" src="../../static/images/11.png"></image>
+    <image class="bottom-three {{ bottom_three }}" src="../../static/images/12.png"></image>
+    <image class="bottom-three2 {{ bottom_three }}" src="../../static/images/12.png"></image>
+    <image class="bottom-four {{ bottom_four }}" src="../../static/images/10.png"></image>
+    <image class="bottom-four2 {{ bottom_four }}" src="../../static/images/10.png"></image>
+  </view>
+  
+</scroll-view>

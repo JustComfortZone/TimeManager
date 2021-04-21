@@ -1,0 +1,131 @@
+/* miniprogram/pages/note/index.wxss */
+.page{
+  height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px 8px;
+  margin: 0 auto;
+ 
+}
+.container-line{
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.user-info {
+ 
+
+  width: 100%;
+  align-items: center;
+}
+
+.user-head {
+  float: left;
+  width: 80rpx;
+  height: 80rpx;
+  
+  border-radius: 50%;
+  margin: 10rpx 20rpx 30rpx 10rpx;
+  background-color: #ccc;
+}
+
+.user-name-time {
+
+  width: 65%;
+  margin-top: 5rpx;
+  margin-left: 5rpx;
+  margin-right: 90rpx;
+}
+
+.user-name {
+  font-size: 35rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.user-publish-time {
+  font-size: 13px;
+  color: #999;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+  margin-top: 14px;
+
+  
+}
+
+.content-scroll {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content-text {
+  font-size: 29rpx;
+  color: #666;
+  margin-left: 10px;
+  display: -webkit-box;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /*显示行数*/
+}
+
+.content-img {
+  width: 200rpx;
+  height: 200rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+  background-color: #999;
+}
+
+
+.user-name-time-right{
+  
+  font-size:20rpx;
+  width: 20rpx;
+  height: 60rpx;
+  color: #333;
+}
+.user-name-time-right .delete_content{
+  color: #333;
+  font-size:20rpx;
+   margin-top: 0rpx;
+  margin-left:500rpx ; 
+  width: 200rpx;
+  
+  
+}
+
+
+.page2{
+  position: fixed;
+  left: 50%;
+  bottom: 60rpx;
+  width: 90rpx;
+  height: 90rpx;
+  margin-left: -45rpx;
+  border-radius: 50%;
+  font-size: 60rpx;
+  line-height: 90rpx;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  color: #444;
+  
+}

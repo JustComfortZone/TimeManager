@@ -1,0 +1,73 @@
+<!--miniprogram/pages/mbook/mbook.wxml-->
+<view class='mbook' >
+  
+  <view class="showbox" >
+    <view class='showbox-top'>
+      
+      <view class='s-t-money'>
+        <label class='s-t-money-box'>  {{jieyu}} </label>
+      </view>
+      <view class='s-t-tag'>
+          <label class='s-t-tag-box' style='border: 1px solid ;'>
+      总资金结余</label>
+      </view>
+
+    </view>
+
+    <view class='showbox-down'>
+      <view class='s-d-item'>
+        <view class='s-d-item-top'>  {{sumin}}</view>
+        <view class='s-d-item-down'>  总收入 </view>
+      </view>
+      <view class='s-d-item'>
+        <view class='s-d-item-top'> {{sumout}} </view>
+        <view class='s-d-item-down'> 总支出 </view>
+      </view>
+    </view>
+      <view class='s-s-item'>
+        <view class='s-s-item-top'>  {{daysumin}}</view>
+        <view class='s-s-item-down'>  日收入 </view>
+      </view>
+      <view class='s-s-item'>
+        <view class='s-s-item-top'> {{daysumout}} </view>
+        <view class='s-s-item-down'> 日支出 </view>
+      </view>
+    
+  </view>
+
+<!--  -->
+<view class='mbox-item' >
+  
+  <view wx:for="{{imgList}}" class='m-list'  wx:key="date" data-id='{{item._id}}' bindlongtap="touchdel">
+<!--  -->
+<view >
+  
+<view class='m-t-title' >
+        <view class='m-t-t-left'>{{item.date}}</view>
+        <view class='m-t-t-right'>金额</view>
+      </view>
+      
+          <view class='m-l-left'>
+            <view class='iconfont-box m-l-timg' >
+              <image style="width: 35px; height: 35px;margin-top:15rpx;" src="../../static/{{item.title_icon}}.svg"></image>
+            </view>
+          </view>
+          <view class='m-l-right'>
+            <view class='m-l-tagname'>
+              {{item.title_text}}
+              <label class='m-l-tagremark'>{{item.remark}}</label>
+            </view>
+            <view class='m-l-money'>
+              {{item.mark}}{{item.money}}
+            </view>
+          </view>
+       
+  </view>
+
+  </view>
+</view>
+<!--  -->
+  <view class='addwater'>
+    <view class="todo-add" bindtap="addwater">+</view>
+  </view>
+</view>

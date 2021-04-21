@@ -1,0 +1,31 @@
+<!--miniprogram/pages/updataname/updataname.wxml-->
+<view class="register" >
+ 
+ <view class="title"> 
+   <image style="height:70rpx;width:370rpx;"  src="../../static/images/2.png"></image>
+   <view class="title1">个人时间管理微信小程序</view>
+ </view>
+ <view class="box">
+   
+ <image class="portrait" data-value='{{fileID}}' name ="fileID" src ='{{users.fileID}}'></image>
+
+ </view>
+ 
+ <button class="zuce" bindtap="upload">修改头像</button>
+
+ <form bindsubmit='comfirm' >
+   <input style='display:none' data-value='{{id}}'  name="id" value='{{users._id}}'></input>
+<view class="text">请输入您的用户名</view>
+
+<input data-value='{{name}}' name ="name" class="input"  bindinput="getName"  value="{{users.name}}"/>
+
+<view class="text">请输入您的账号</view>
+<input data-value='{{account}}' name ="account" class="input"  bindinput="getaccount" value="{{users.account}}"/>
+
+<view class="text">请输入您的密码</view>
+<input  class="input" password="true" data-value='{{password}}' name ="password" bindinput="getpassword"value="{{users.password}}" />
+<view class='comfirm'>
+<button bindtap="save">保存</button></view>
+</form>
+</view>
+

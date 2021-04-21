@@ -1,0 +1,122 @@
+<!--miniprogram/pages/todo/index.wxml-->
+<view class="page">
+  <view class="todo-list">
+    <view class="todo-header">
+      进行中
+    </view>
+    <view
+      wx:for="{{ todos }}"
+      wx:if="{{ !item.checked }}"
+      wx:key="{{ index }}"
+      bindlongtap="handleTodoLongclick"
+      data-id='{{item._id}}'
+      class="todo-list-item ripple fast fadeInRight"
+      style="animation-delay: {{ delay ? index * 0.1 : 0 }}s">
+
+     <!-- 等级提示条 -->
+      <view class="todo-item todo-item--level{{item.tip}}">
+        <view class="todo-item__col1">
+          <!-- 确认框 -->
+          <view
+  class="todo-checkbox {{ item.checked ? 'todo-checkbox--checked' : '' }}"
+  bindtap="handleToggle" data-id='{{item._id}}' data-checked='{{item.checked}}'>
+  <icon
+    class="todo-checkbox__icon"
+    type="success_no_circle"
+    color="{{ item.checked ? '#C1C5C8' : 'white' }}"
+    size="12">
+  </icon>
+</view>
+        </view>
+<!-- 事项框 -->
+        <view class="todo-item__col2" >
+    <input 
+      class="todo-item__title"
+      value="{{ item.title }}"
+      placeholder="准备做什么？"
+      bindinput="handleTitleChange"
+      data-id='{{item._id}}'
+      auto-focus="{{ autoFocus }}">
+    </input>
+  </view>
+<!-- 时间选择器 -->
+  <view class="todo-item__col3" bindtap="handleDateClick">
+    <picker class="todo-item__date" mode="date" bindchange="handleDateChange" value="{{item.date}}" data-id='{{item._id}}' >{{ item.date }}</picker>
+  </view>
+
+
+
+<!-- 分割线 -->
+
+      </view>
+
+    </view>
+    <view class="ripple bounceIn" wx:if="{{!uncompletedCount}}">
+      <tips-info text="太棒了，你的任务已全部完成啦！">
+      </tips-info>
+    </view>
+  </view>
+  <!-- <view wx:if="{{ completedCount }}" class="todo-list"> -->
+  <view wx:if="{{ completedCount }}" class="todo-list">
+    <view class="todo-header">
+      已完成
+    </view>
+    <view
+      wx:for="{{ todos }}"
+      wx:key="{{ index }}"
+      bindlongtap="handleTodoLongclick"
+      data-id='{{item._id}}'
+      wx:if="{{ item.checked }}"
+      class="todo-list__item ripple fast fadeInRight"
+      style="animation-delay: {{ delay ? index * 0.1 : 0 }}s">
+      <!--已完成  -->
+ <!-- 等级提示条 -->
+ <view class="todo-item todo-item--level{{item.tip}}">
+  <view class="todo-item__col1">
+          <!-- 确认框 -->
+          <view
+  class="todo-checkbox {{ item.checked ? 'todo-checkbox--checked' : '' }}"
+  bindtap="handleToggle" data-id='{{item._id}}' data-checked='{{item.checked}}'>
+  <icon
+    class="todo-checkbox__icon"
+    type="success_no_circle"
+    color="{{ item.checked ? '#C1C5C8' : 'white' }}"
+    size="12">
+  </icon>
+</view>
+        
+        </view>
+        <!-- 事项框 -->
+        <view class="todo-item__col2" >
+    <input 
+      class="todo-item__title"
+      value="{{ item.title }}"
+      placeholder="准备做什么？"
+      bindinput="handleTitleChange"
+      data-id='{{item._id}}'
+      auto-focus="{{ autoFocus }}">
+    </input>
+  </view>
+<!-- 时间选择器 -->
+<view class="todo-item__col3" bindtap="handleDateClick">
+    <picker class="todo-item__date" mode="date" bindchange="handleDateChange" value="{{item.date}}" data-id='{{item._id}}' >{{ item.date }}</picker>
+  </view>
+
+
+
+
+
+ </view>
+
+
+
+
+
+
+
+
+
+    </view>
+  </view>
+  <view class="todo-add" bindtap="handleAddTodo">+</view>
+</view>

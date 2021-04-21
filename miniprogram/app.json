@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/todo/index",
+    "pages/personal/personal",
+    "pages/tomato/tomato",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/note/index",
+    "pages/note/create",
+    "pages/note/detail",
+    "pages/mbook/mbook",
+    "pages/mbook/addwater",
+    "pages/mytomato/mytomato",
+    "pages/day/day",
+    "pages/mission/mission",
+    "pages/todo/create",
+    "pages/updataname/updataname"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#8f1c0d",
+    "navigationBarTitleText": "个人时间管理小程序",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#8f1c0d",
+    "selectedColor": "#8f1c0d",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/todo/index",
+        "text": "个人日程",
+        "iconPath": "/static/images/nav/schedule1.png",
+        "selectedIconPath": "/static/images/nav/schedule2.png"
+      },
+      {
+        "pagePath": "pages/tomato/tomato",
+        "text": "番茄钟",
+        "iconPath": "/static/images/nav/tomato1.png",
+        "selectedIconPath": "/static/images/nav/tomato2.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "/static/images/nav/personal1.png",
+        "selectedIconPath": "/static/images/nav/personal2.png"
+      }
+    ]
+  }
+}

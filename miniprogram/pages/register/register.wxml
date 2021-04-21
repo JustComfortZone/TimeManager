@@ -1,0 +1,24 @@
+<!--miniprogram/pages/register/register.wxml-->
+<view class="register">
+  <view class="title"> 
+    <image style="height:70rpx;width:370rpx;"  src="../../static/images/2.png"></image>
+    <view class="title1">个人时间管理微信小程序</view>
+  </view>
+  <view class="box">
+  <image class="portrait"  src = '{{fileID?fileID:"/static/images/personal/missing-face.png"}}' ></image>
+
+  </view>
+  <button  class="zuce" bindtap="upload">上传头像</button>
+
+
+<view class="text">请输入您的用户名</view>
+<input class="input" bindinput="getName" />
+
+<view class="text">请输入您的账号</view>
+<input class="input" bindinput="getaccount" />
+
+<view class="text">请输入您的密码</view>
+<input class="input" password="true"  bindinput="getpassword" />
+
+<button bindtap="register">注册</button>
+</view>

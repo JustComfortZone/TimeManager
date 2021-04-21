@@ -1,0 +1,96 @@
+<!--miniprogram/pages/todo/create.wxml-->
+<view class="page">
+  <view class="field-set">
+    <view class="create-header">
+      <view
+  class="todo-item todo-item--level{{ tip }} {{ checked ? 'todo-item--checked' : '' }}">
+  <!-- {{ todo.completed ? 'todo-item--completed' : '' }}
+
+    {{ checked ? 'todo-item--checked' : '' }}
+  当todo.completed的值为真的时候，显示'todo-item--completed'的样式，为假的时候为空 
+  todo.completed 是check-->
+
+  <view class="todo-item__col1">
+    <view
+  class="todo-checkbox {{ checked ? 'todo-checkbox--checked' : '' }}"
+  bindtap="handleToggle">
+  <!-- {{ checked ? 'todo-checkbox--checked' : '' }} 
+  当checked的值为真的时候，显示'todo-checkbox--checked'，为假的时候为空
+  通过checked判断当前是否为选中样式，而后进行样式的添加todo-checkbox--checked -->
+  <icon
+    class="todo-checkbox__icon"
+    type="success_no_circle"
+    color="{{ checked ? '#C1C5C8' : 'white' }}"
+    size="12">
+  </icon>
+  <!-- 图标组件，type=""图标类型 以上选择的是没有外圈的打勾 -->
+</view>
+  </view>
+
+  <view class="todo-item__col2">
+    <input
+      class="todo-item__title"
+      value="{{ todo.title }}"
+      placeholder="准备做什么？"
+      bindinput="handleTitleChange"
+      auto-focus="{{ autoFocus }}">
+    </input>
+    <!--
+      新建任务页面，value是输入准备要做的事情
+       auto-focus 弹出键盘 -->
+  </view>
+  <view class="todo-item__col3" bindtap="handleDateClick">
+  <!-- bindtap="handleDateClick" 点击事件函数，点击时触发 
+    bindtap和catchtap的区别,主要是一个是冒泡的，一个是非冒泡的
+
+    冒泡事件：当一个组件上的事件被触发后，该事件会向父节点传递。
+    非冒泡事件：当一个组件上的事件被触发后，该事件不会向父节点传递。
+
+    父节点:view1和view2作为WXML元素，view2在view1里面，我们就称谓view1为view2的父节点。
+    父节点可能不是一个，可以是多个。我们举得例子中只有一个。
+    传递:因为bindtap是冒泡的，所以当我们用bindtap绑定到view2上面的时候，这个bindtap事件会向上传递，就像冒泡泡一样。
+    让view1元素也具有了bindtap="getName"这个事件。这就叫做传递。
+    而catchtap是非冒泡的，所以当给view2绑定catchtap的时候view1不具有这个事件。 -->
+    <!-- <text class="todo-item__date">{{ todo.date }}</text> -->
+
+    <!-- 时间选择器 -->
+    <picker class="todo-item__date" mode="date" bindchange="handleDateChange" value="{{date}}" >{{ date }}</picker>
+    <!-- picker选择器分为5种：分别是普通选择器，多列选择器，时间选择器，日期选择器，省市区选择器，默认是普通选择器，
+    可以用mode属性区分。mode="date"是日期选择器 mode="time"是时间选择器
+    bindChange 为输入框发生改变事件.
+    -->
+  </view>
+</view>
+    </view>
+    <view class="field-item">
+      <label class="field-label">优先级</label>
+      <label class="field-control">
+        <picker
+          class="w-full"
+          range="{{ levels }}"
+          value="{{ levels }}"
+          bindchange="handleLevelChange">
+          {{ level}}
+        </picker>
+      </label>
+    </view>
+    <!-- <view class="field-item">
+      <label class="field-label">描述</label>
+      <label class="field-control">
+        <textarea
+          class="field-input w-full"
+          placeholder="任务描述..."
+          bindinput="handleDescChange">
+        </textarea>
+      </label>
+    </view> -->
+  </view>
+  <view class="fixed-bottom">
+    <view class="button-group">
+      <button class="button" bindtap="handleCancelTap">取消</button>
+      <button  bindtap="handleSaveTap" class="button button-primary"  data-btn='2'>保存</button>
+
+    </view>
+    <!--bindtap="handleSaveTap"  -->
+  </view>
+</view>

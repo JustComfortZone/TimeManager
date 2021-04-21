@@ -1,0 +1,86 @@
+/* miniprogram/pages/note/create.wxss */
+.content {
+  height: 100%;
+  width: 100%;
+}
+
+textarea {
+  width: 700rpx;
+  padding: 25rpx 0;
+}
+
+.text-content {
+  background-color: #f3efef;
+  padding: 0 25rpx;
+}
+
+.image-group {
+  display: flex;
+  white-space: nowrap;
+  margin-top: 30px;
+}
+
+.image-group view{
+  display: inline-block;
+  flex-direction: row;
+  width: 375rpx;
+  height: 375rpx;
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+  background-color: #cfcccc;
+}
+
+.image-group view image{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.image-group view icon{
+  display: inline-block;
+  vertical-align: top;
+  position: absolute
+}
+.btn-func {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.btn-img {
+  width: 220px;
+  height: 45px;
+  line-height: 45px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color:#c78e8e;
+  color: #fff;
+  border-radius: 50px;
+  padding-top: 0px;
+}
+
+.btn {
+  width: 220px;
+  height: 45px;
+  line-height: 45px;
+  background-color: #8f1c0d;
+  color: #fff;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 0px;
+  
+}
+.currentWordNumber {
+  height: 35px;
+  /* line-height: 35rpx; */
+  font-size: 14px;
+  float: right;
+  margin-right: 1px;
+  color: rgba(136, 136, 136, 1);
+  margin-bottom: 10px;
+}

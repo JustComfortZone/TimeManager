@@ -1,0 +1,5 @@
+<!--miniprogram/pages/day/day.wxml-->
+<view class="charts-card">
+    <view class="charts-card__header">每天完成量</view>
+    <canvas class="charts-card__body" canvas-id="chartsB" bindtouchstart="touchHandler" bindtouchmove="moveHandler" bindtouchend="touchEndHandler"></canvas>
+  </view>

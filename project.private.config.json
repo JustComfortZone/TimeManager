@@ -1,0 +1,59 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/personal/personal",
+          "pathName": "pages/personal/personal",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/tomato/tomato",
+          "pathName": "pages/tomato/tomato",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/todo/index",
+          "pathName": "pages/todo/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/day/day",
+          "pathName": "pages/day/day",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/todo/create",
+          "pathName": "pages/todo/create",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

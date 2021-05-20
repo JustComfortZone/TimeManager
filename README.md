@@ -1,11 +1,43 @@
-# 云开发 quickstart
-
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
-
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
-
-## 参考文档
-
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
+# 个人时间管理微信小程序
+## 首页动画
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/1.png)
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/2.png)
+## 注册功能
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/3.png)
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/4.png)
+## 登录功能
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/5.png)
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/6.png)
+## 修改个人信息功能
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/7.png)
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/8.png)
+## 个人日程
+### 新建个人日程
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/9.png)
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/10.png)
+### 个人日程界面
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/11.png)
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/12.png)
+## 番茄钟
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/13.png)
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/14.png)
+## 我的账本
+### 添加收支记录
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/15.png)
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/16.png)
+### 我的账本界面
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/17.png)
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/18.png)
+## 我的日记
+### 新建日记
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/19.png)
+### 我的日记界面
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/20.png)
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/21.png)
+## 番茄钟统计
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/22.png)
+## 每日完成量统计
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/23.png)
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/24.png)
+## 每日完成率统计
+![Image text](https://github.com/JustComfortZone/TimeManager/blob/master/img/25.png)

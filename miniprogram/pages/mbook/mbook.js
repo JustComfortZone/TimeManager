@@ -142,9 +142,6 @@ Page({
 
   },
 
-
-
-
   touchdel: function (event){
     console.log("even",event)
     wx.showModal({

@@ -114,7 +114,6 @@ Page({
         content: that.data.content,
         date: that.GetCurrentTime(),
         images: that.data.images,
-        user: that.data.user,
         userid:that.data.user._id,
         username:that.data.user.name,
         userfileID:that.data.user.fileID,
@@ -202,27 +201,14 @@ Page({
    * 判断用户是否登录
    */
   jugdeUser: function(event) {
-    // 查看是否授权
+ 
     var user=wx.getStorageSync('user')
     console.log("user",user)
     this.setData({
       user:user,
       userid:user._id
     })
-    // wx.getSetting({
-    //   success(res) {
-    //     if (res.authSetting['scope.userInfo']) {
-    //       // 已经授权，可以直接调用 getUserInfo 获取头像昵称
-    //       wx.getUserInfo({
-    //         success: function(res) {
 
-    //           that.data.user = res.userInfo;
-    //           console.log(that.data.user)
-    //         }
-    //       })
-    //     }
-    //   }
-    // })
   },
  
  

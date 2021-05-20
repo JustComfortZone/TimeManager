@@ -2,9 +2,9 @@
 <view class='container' bindtap='onItemClick'>
   <view class='container-content'>
     <view class='user-info'>
-      <image class='user-head' src='{{topic.user.fileID}}' mode='aspectFill'></image>
+      <image class='user-head' src='{{notefileID}}' mode='aspectFill'></image>
       <view class='user-name-time'>
-        <view class='user-name'>{{topic.user.name}}</view>
+        <view class='user-name'>{{notename}}</view>
         <view class='user-publish-time'>{{topic.date}}</view>
       </view>
     </view>

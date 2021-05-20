@@ -4,9 +4,9 @@ Page({
     name:'',
     account:'',
     password:'',
-    fileID:'',
+    _fileID:'',
     _id:'',
-    users:[]
+    users:{}
   },
   //获取用户头像
   upload(){
@@ -32,8 +32,12 @@ Page({
         // 返回文件 ID
         console.log("上传成功",res)
         this.data.users.fileID=res.fileID
+        
         let fileID=res.fileID
-
+        wx.setStorageSync('fileID',fileID)
+        this.setData({
+          fileID:fileID,
+        })
         console.log("fileID",this)
         //获取文件路径
         console.log("",fileID)
@@ -136,6 +140,8 @@ update(){
   onPullDownRefresh: function () {
     this.onShow();
     wx.stopPullDownRefresh();
+
+
   },
 
 })

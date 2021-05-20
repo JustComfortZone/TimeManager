@@ -6,9 +6,8 @@
    <view class="title1">个人时间管理微信小程序</view>
  </view>
  <view class="box">
-   
- <image class="portrait" data-value='{{fileID}}' name ="fileID" src ='{{users.fileID}}'></image>
-
+ <image wx:if="{{fileID==null}}"  class="portrait" name ="fileID" data-value='{{fileID}}' src ='{{users.fileID}}'></image>
+ <image wx:else class="portrait" name ="fileID" data-value='{{fileID}}' src ='{{fileID}}'></image>
  </view>
  
  <button class="zuce" bindtap="upload">修改头像</button>

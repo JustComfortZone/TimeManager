@@ -12,7 +12,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    windowWidth: 320,
+        windowWidth: 320,
         todosCount: 0,
         todosUncompletedCount: 0,
         todosCompletedCount: 0,

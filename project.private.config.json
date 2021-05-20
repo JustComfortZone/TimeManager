@@ -51,6 +51,18 @@
         {
           "name": "pages/todo/create",
           "pathName": "pages/todo/create",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/note/detail",
+          "pathName": "pages/note/detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/note/index",
+          "pathName": "pages/note/index",
           "scene": null
         }
       ]

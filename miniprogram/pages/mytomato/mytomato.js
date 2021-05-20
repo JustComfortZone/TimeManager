@@ -160,11 +160,9 @@ Page({
   
   }).orderBy('date','desc')
     .get({
-      success(res){       
-       
+      success(res){   
         _this.setData({ //通过setData，将res中的数据存入到imgList数组当中
           datebaseList:res.data,
-         
         })
       }
     })

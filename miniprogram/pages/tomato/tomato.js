@@ -143,8 +143,7 @@ Page({
           date:util.formatTime(new Date),
           cate:_this.data.cateActive,
           time:_this.data.time,
-          userid:user._id,
-          user:user
+          userid:user._id
         },
         success(res){
           console.log('保存成功',res)

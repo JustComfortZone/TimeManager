@@ -102,19 +102,7 @@
     <picker class="todo-item__date" mode="date" bindchange="handleDateChange" value="{{item.date}}" data-id='{{item._id}}' >{{ item.date }}</picker>
   </view>
 
-
-
-
-
  </view>
-
-
-
-
-
-
-
-
 
     </view>
   </view>

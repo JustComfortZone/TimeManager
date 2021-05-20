@@ -14,11 +14,11 @@
     <image class="two-four {{ two_four }}" src="../../static/images/20.png"></image>
     <view class="two-five {{two_five}}" >
       <view wx:if="{{!loginOK}}">
-        <button style="color:#8f1c0d; font-size:30rpx;margin:-13rpx 40rpx 25rpx -50rpx;" bindtap="login">登录</button>
-        <button  style="color:#8f1c0d; font-size:30rpx;margin:-50rpx 40rpx 25rpx -50rpx;" bindtap="register">注册</button>
+        <button hover-class="none" style="color:#8f1c0d; font-size:30rpx;margin:-13rpx 40rpx 25rpx -50rpx;" bindtap="login">登录</button>
+        <button hover-class="none" style="color:#8f1c0d; font-size:30rpx;margin:-50rpx 40rpx 25rpx -50rpx;" bindtap="register">注册</button>
       </view>
       <view wx:else >
-        <button style="color:#8f1c0d; font-size:30rpx;font-weight:700;margin:10rpx 90rpx 50rpx -50rpx;" bindtap="toLogs">进入小程序</button>
+        <button hover-class="none" style="color:#8f1c0d; font-size:30rpx;font-weight:700;margin:10rpx 90rpx 50rpx -50rpx;" bindtap="toLogs">进入小程序</button>
       </view>
     
   </view>

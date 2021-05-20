@@ -74,16 +74,7 @@
         </picker>
       </label>
     </view>
-    <!-- <view class="field-item">
-      <label class="field-label">描述</label>
-      <label class="field-control">
-        <textarea
-          class="field-input w-full"
-          placeholder="任务描述..."
-          bindinput="handleDescChange">
-        </textarea>
-      </label>
-    </view> -->
+ 
   </view>
   <view class="fixed-bottom">
     <view class="button-group">

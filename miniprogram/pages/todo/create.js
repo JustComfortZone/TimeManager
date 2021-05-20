@@ -114,7 +114,6 @@ Page({
             level:level,
             checked:checked,
             tip:tip,
-            user:user,
             userid:user._id,
          
      

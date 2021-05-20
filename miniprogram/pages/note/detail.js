@@ -30,7 +30,12 @@ Page({
         })
       }
     })
-
+    var user=wx.getStorageSync('user')
+      that.setData({
+        notefileID:user.fileID,
+        notename:user.name
+      })
+      console.log("dedede",this)
     
 
   },
